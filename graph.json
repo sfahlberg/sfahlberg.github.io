@@ -1,9 +1,9 @@
 {
   "name": "Sam Fahlberg",
-  "size": 1000000,
   "children": [
-  { "name": "Linkedin" },
-  { "name": "resume" },
+  { "name": "Linkedin"},
+  { "name": "resume",
+    "url": "http://www.google.com" },
   { "name": "Blog" },
   { 
     "name": "projects",
