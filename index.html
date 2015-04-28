@@ -6,12 +6,12 @@
 .node circle {
   cursor: pointer;
   stroke: #3182bd;
-  stroke-width: 120px;
+  stroke-width: 60px;
 
 }
 
 .node text {
-  font: 30px sans-serif;
+  font: 15px sans-serif;
   pointer-events: none;
   text-anchor: middle;
 
@@ -20,8 +20,7 @@
 line.link {
   fill: none;
   stroke: #9ecae1;
-  stroke-width: 20px;
-
+  stroke-width: 5px;
 }
 
 </style>
@@ -29,12 +28,12 @@ line.link {
 <script src="d3.v3.min.js" charset="utf-8"></script>
 <script>
 
-var width = 960,
+var width = 1260,
     height = 800,
     root;
 
   var force = d3.layout.force()
-  .linkDistance(300)
+  .linkDistance(50)
   .charge(-10000)
   .gravity(.05)
 .size([width, height])
@@ -82,7 +81,7 @@ function update() {
     .call(force.drag);
 
   nodeEnter.append("circle")
-    .attr("r", function(d) { return 35;  });
+    .attr("r", function(d) { return 25;  });
 
   nodeEnter.append("text")
     .attr("dy", ".35em")
@@ -120,7 +119,9 @@ function click(d) {
   } else {
     d.children = d._children;
     d._children = null;
-    window.open(d.url);
+    if (d.url) {
+      window.open(d.url);
+    }
   }
   update();
 
