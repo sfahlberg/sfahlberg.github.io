@@ -1,16 +1,11 @@
 {
   "name": "Sam Fahlberg",
+  "factor": 2,
   "children": [
   { "name": "Linkedin", "url": "https://www.linkedin.com/in/samuelfahlberg" },
   { "name": "resume", "url": "/resume.pdf" },
   { "name": "Blog", "url": "http://sfahlberg.tumblr.com/" },
   { "name": "GitHub", "url": "https://github.com/sfahlberg" },
-  { "name": "projects",
-    "children": [
-    { "name": "BuyCycle" },
-    {"name": "Weather or Not"}
-      ]
-  }
+  { "name": "Twitter", "url": "https://twitter.com/sfahlberg" }
   ]
 }
-
