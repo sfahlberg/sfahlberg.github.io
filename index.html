@@ -34,9 +34,14 @@ var width = window.innerWidth,
 
 d3.json("graph.json", function(error, json) {
     root = json;
+    flatten(root); //to set ids
+    setParents(root, null);
+    collapseAll(root);
+    root.children = root._children;
+    root._children = null;
     update();
-
     });
+
 
 function update() {
   var nodes = flatten(root),
@@ -98,6 +103,13 @@ function click(d) {
     d.children = null;
 
   } else {
+    if (d._parent){
+      d._parent.children.forEach(function(e){
+          if (e != d){
+            collapseAll(e);
+          }
+        });
+      }
     d.children = d._children;
     d._children = null;
     if (d.url) {
@@ -122,6 +134,26 @@ function flatten(root) {
   recurse(root);
   return nodes;
 
+}
+
+function collapseAll(d){
+  if (d.children){
+      d.children.forEach(collapseAll);
+      d._children = d.children;
+      d.children = null;
+  }
+  else if (d._children){
+      d._children.forEach(collapseAll);
+  }
+}
+
+function setParents(d, p){
+      d._parent = p;
+      if (d.children) {
+              d.children.forEach(function(e){ setParents(e,d); });
+      } else if (d._children) {
+              d._children.forEach(function(e){ setParents(e,d); });
+      }
 }
 
 </script>
