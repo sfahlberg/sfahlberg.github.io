@@ -1,22 +1,22 @@
 body {
-  background-color: black;
+  background-color: #031634;
   overflow: hidden;
 }
 
 .node circle {
   cursor: pointer;
-  stroke: #CB0000; 
-  fill: #CB0000;
+  stroke: #036564;
+  fill: #036564;
 }
 
 .node text {
   pointer-events: none;
   text-anchor: middle;
-  font-color: white;
+  fill: #E8DDCB;
 }
 
 line.link {
   fill: none;
-  stroke: #9ecae1;
+  stroke: #033649;
   stroke-width: 5px;
 }
