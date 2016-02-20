@@ -5,8 +5,8 @@ var width = window.innerWidth,
     radius = width/25,
     linkWidth = width/30,
     nodeStrokeWidth = width/30,
-    fontWidth = radius / 1.4,
-    charge = -10 * width,
+    fontWidth = radius / 1.5,
+    charge = -20 * width,
     gravity = 0.3;
 
   var force = d3.layout.force()
@@ -72,7 +72,8 @@ function update() {
 
   nodeEnter.append("text")
     .attr("dy", ".35em")
-   .attr("font-size", fontWidth)
+    .attr("font-size", fontWidth)
+    .attr("font-family", "sans-serif")
     .text(function(d) { return d.name;  });
 }
 
