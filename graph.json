@@ -9,7 +9,7 @@
   { "name": "projects+",
     "children": [
   { "name": "Weather", "url": "http://www.samfahlberg.com/weatherornot/" },
-  { "name": "BuyCycle", "url": "http://www.buycycle.us/" }
+  { "name": "BuyCycle", "url": "buycycle.herokuapp.com" }
       ] }
   ]
 }
