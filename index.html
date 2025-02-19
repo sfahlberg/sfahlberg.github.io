@@ -1,63 +1,89 @@
-import React from "react";
-import { Container, Typography, Button, Avatar, Box } from "@mui/material";
-
-const Profile = () => {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        backgroundColor: "#f8f9fa",
-      }}
-    >
-      <Container
-        sx={{
-          maxWidth: "sm",
-          textAlign: "center",
-          backgroundColor: "white",
-          p: 4,
-          borderRadius: 2,
-          boxShadow: 3,
-        }}
-      >
-        <Avatar
-          src="profile-picture.jpg"
-          alt="Samuel Fahlberg"
-          sx={{ width: 120, height: 120, mx: "auto", mb: 2 }}
-        />
-        <Typography variant="h4" fontWeight={600} gutterBottom>
-          Samuel Fahlberg
-        </Typography>
-        <Typography variant="h6" color="textSecondary" gutterBottom>
-          Career & Leadership Consultant
-        </Typography>
-        <Typography variant="body1" color="textSecondary" paragraph>
-          I help startup leaders and professionals grow their careers with
-          strategic guidance and leadership support.
-        </Typography>
-        <Typography variant="body1" color="textSecondary" paragraph>
-          With 9 years of experience from startups to public companies like
-          Amazon and One Medical, I specialize in engineering leadership,
-          talent development, and organizational growth.
-        </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          href="mailto:samuelwfahlberg@gmail.com"
-          sx={{ mt: 2, borderRadius: 50, px: 4, py: 1 }}
-        >
-          Email Me
-        </Button>
-        <Box sx={{ mt: 3 }}>
-          <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank" rel="noopener noreferrer">
-            <img src="linkedin-logo.png" alt="LinkedIn" width="32" />
-          </a>
-        </Box>
-      </Container>
-    </Box>
-  );
-};
-
-export default Profile;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Fahlberg - Career & Leadership Consultant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background-image: url('profile-picture.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .role {
+      font-size: 18px;
+      color: #6c757d;
+      margin-bottom: 16px;
+    }
+    .description {
+      color: #6c757d;
+      margin-bottom: 16px;
+    }
+    .contact-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .linkedin-logo {
+      margin-top: 16px;
+    }
+    .linkedin-logo img {
+      width: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar"></div>
+    <div class="name">Samuel Fahlberg</div>
+    <div class="role">Career & Leadership Consultant</div>
+    <p class="description">
+      I help startup leaders and professionals grow their careers with strategic guidance and leadership support.
+    </p>
+    <p class="description">
+      With 9 years of experience from startups to public companies like Amazon and One Medical, I specialize in engineering leadership, talent development, and organizational growth.
+    </p>
+    <a href="mailto:samuelwfahlberg@gmail.com" class="contact-btn">Email Me</a>
+    <div class="linkedin-logo">
+      <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank" rel="noopener noreferrer">
+        <img src="linkedin-logo.png" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
