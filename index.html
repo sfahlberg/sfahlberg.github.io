@@ -1,135 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sam Fahlberg — Career Coaching for Startups</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #0b1120;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid white;
-      margin-bottom: 1rem;
-    }
-    main {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      color: #0b1120;
-      margin-bottom: 0.5rem;
-    }
-    .cta {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #0b1120;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    blockquote {
-      font-style: italic;
-      background: #f0f0f0;
-      padding: 1rem;
-      border-left: 4px solid #0b1120;
-      margin: 1rem 0;
-    }
-    blockquote footer {
-      font-weight: bold;
-      margin-top: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    footer a {
-      text-decoration: none;
-      color: #0b1120;
-      font-weight: bold;
-    }
-    .social-links img {
-      width: 35px;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Fahlberg - Career Coaching</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .flex {
+            display: flex;
+            gap: 20px;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .items-center {
+            justify-content: center;
+        }
+        .text-center {
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .cta-button {
+            background-color: #1D4ED8;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2563EB;
+        }
+        .reviews {
+            margin-top: 40px;
+        }
+        .review {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .review p {
+            font-style: italic;
+        }
+        .review .author {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-info img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="profile-picture.jpg" alt="Sam Fahlberg" />
-    <h1>Helping mid-career tech pros land roles they love — faster.</h1>
-    <p>Career coaching as a retention benefit for startups</p>
-    <a href="#contact" class="cta">Book a Free Strategy Call</a>
-  </header>
 
-  <main>
-    <section>
-      <h2>Why Work With Me</h2>
-      <p>I’ve worked in tech for 9 years and spent 2 years managing engineers. I’ve helped software developers and engineers grow into new roles, negotiate salaries, and navigate transitions. My approach blends honest feedback with compassionate coaching—giving clients the clarity and confidence they need to move forward.</p>
-    </section>
+    <div class="container">
+        <div class="flex flex-col">
+            <h1>Helping mid-career tech professionals land roles they love — faster.</h1>
+            <p>Career coaching for startups that want to retain and grow top technical talent.</p>
 
-    <section>
-      <h2>What Clients Are Saying</h2>
+            <div>
+                <h2>Why work with me</h2>
+                <ul>
+                    <li>9 years of experience working in tech companies</li>
+                    <li>2 years of experience managing engineers</li>
+                    <li>Hands-on coaching that balances career strategy with real psychological insight</li>
+                    <li>Trusted by engineers from fast-growing startups and tech firms</li>
+                </ul>
+            </div>
 
-      <blockquote>
-        "Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving, without making me feel foolish or embarrassed about it."
-        <footer>— Nathan</footer>
-      </blockquote>
+            <a href="https://calendly.com/sam-fahlberg/15min" class="cta-button" target="_blank">Book a Free Strategy Call</a>
+        </div>
 
-      <blockquote>
-        "Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome... He helped me overcome those self-doubts and grow into a confident, capable engineer."
-        <footer>— Ling</footer>
-      </blockquote>
+        <div class="reviews">
+            <div class="review">
+                <p>"Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving, without making me feel foolish or embarrassed about it."</p>
+                <p class="author">- Nathan</p>
+            </div>
 
-      <blockquote>
-        "When I was transitioning into software development, Sam was exactly the mentor I needed... His support gave me the confidence to pursue engineering seriously."
-        <footer>— Yulduz</footer>
-      </blockquote>
-    </section>
+            <div class="review">
+                <p>"Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome, constantly doubting my abilities and place in a male-dominated field. Through his patient mentorship, honest feedback, and unwavering belief in my potential, he helped me overcome those self-doubts and grow into a confident, capable engineer. His leadership didn’t just sharpen my technical skills—it reshaped how I saw myself. I went from second-guessing everything to owning my ideas and leading with conviction. Anyone lucky enough to work with him is in for something truly transformative."</p>
+                <p class="author">- Ling</p>
+            </div>
 
-    <section id="contact">
-      <h2>Let’s Talk</h2>
-      <p>Curious if coaching could support your team? Let’s chat.</p>
-      <a href="mailto:sam@trysamfahlberg.com" class="cta">Book a Free Strategy Call</a>
-    </section>
-  </main>
+            <div class="review">
+                <p>"When I was transitioning into software development, Sam was exactly the mentor I needed. He didn’t just help me level up technically—he encouraged me during moments of doubt and helped me see the bigger picture in my career. His support gave me the confidence to pursue engineering seriously, and I still carry lessons from our conversations to this day. I’m truly grateful for his guidance."</p>
+                <p class="author">- Yulduz</p>
+            </div>
+        </div>
 
-  <footer>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/LinkedIn_logo_2013.svg" alt="LinkedIn" />
-      </a>
+        <div class="contact-info">
+            <h3>Let’s talk</h3>
+            <a href="https://calendly.com/sam-fahlberg/15min" class="cta-button" target="_blank">Book a Free Strategy Call</a>
+
+            <p>Email: <a href="mailto:Sam@trysamfahlberg.com">Sam@trysamfahlberg.com</a></p>
+            <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+        </div>
     </div>
-  </footer>
+
 </body>
 </html>
