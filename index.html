@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel Fahlberg - Consultant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam Fahlberg — Career Coaching for Startups</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    .container {
-      background-color: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    header {
+      background-color: #0b1120;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
-      max-width: 400px;
-      width: 100%;
     }
-    .avatar {
+    header h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    header img {
       width: 120px;
       height: 120px;
-      margin: 0 auto 20px;
       border-radius: 50%;
-      background-image: url('profile-picture.jpg');
-      background-size: cover;
-      background-position: center;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 1rem;
     }
-    .name {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 8px;
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
     }
-    .role {
-      font-size: 18px;
-      color: #6c757d;
-      margin-bottom: 16px;
+    section {
+      margin-bottom: 2rem;
     }
-    .description {
-      color: #6c757d;
-      margin-bottom: 16px;
+    h2 {
+      font-size: 1.5rem;
+      color: #0b1120;
+      margin-bottom: 0.5rem;
     }
-    .contact-btn {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 30px;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: 600;
+    .cta {
       display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #0b1120;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
-    .linkedin-logo {
-      margin-top: 16px;
+    blockquote {
+      font-style: italic;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-left: 4px solid #0b1120;
+      margin: 1rem 0;
     }
-    .linkedin-logo img {
-      width: 32px;
+    blockquote footer {
+      font-weight: bold;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="avatar"></div>
-    <div class="name">Samuel Fahlberg</div>
-    <div class="role">Career & Leadership Consultant</div>
-    <p class="description">
-      I help startup leaders and professionals grow their careers with strategic guidance and leadership support.
-    </p>
-    <p class="description">
-      With 9 years of experience from startups to public companies like Amazon and One Medical, I specialize in engineering leadership, talent development, and organizational growth.
-    </p>
-    <a href="mailto:samuelwfahlberg@gmail.com" class="contact-btn">Email Me</a>
-    <div class="linkedin-logo">
-      <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank" rel="noopener noreferrer">
-        <img src="linkedin-logo.png" alt="LinkedIn">
-      </a>
-    </div>
-  </div>
+  <header>
+    <img src="profile-picture.jpg" alt="Sam Fahlberg" />
+    <h1>Helping mid-career tech pros land roles they love — faster.</h1>
+    <p>Career coaching as a retention benefit for startups</p>
+    <a href="#contact" class="cta">Book a Free Strategy Call</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why Work With Me</h2>
+      <p>I’ve worked in tech for 9 years and spent 2 years managing engineers. I’ve helped software developers and engineers grow into new roles, negotiate salaries, and navigate transitions. My approach blends honest feedback with compassionate coaching—giving clients the clarity and confidence they need to move forward.</p>
+    </section>
+
+    <section>
+      <h2>What Clients Are Saying</h2>
+
+      <blockquote>
+        "Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving, without making me feel foolish or embarrassed about it."
+        <footer>— Nathan</footer>
+      </blockquote>
+
+      <blockquote>
+        "Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome... He helped me overcome those self-doubts and grow into a confident, capable engineer."
+        <footer>— Ling</footer>
+      </blockquote>
+
+      <blockquote>
+        "When I was transitioning into software development, Sam was exactly the mentor I needed... His support gave me the confidence to pursue engineering seriously."
+        <footer>— Yulduz</footer>
+      </blockquote>
+    </section>
+
+    <section id="contact">
+      <h2>Let’s Talk</h2>
+      <p>Curious if coaching could support your team? Let’s chat.</p>
+      <a href="mailto:sam@samfahlberg.com" class="cta">Book a Free Strategy Call</a>
+    </section>
+  </main>
 </body>
 </html>
