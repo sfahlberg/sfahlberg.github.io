@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-677BRN2PZQ"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-677BRN2PZQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-677BRN2PZQ');
-
-    // Toggle function to show/hide full testimonial
-    function toggleText(link) {
-      const testimonial = link.parentNode;
-      const shortText = testimonial.querySelector('.short-text');
-      const fullText = testimonial.querySelector('.full-text');
-      if (fullText.style.display === 'none') {
-        fullText.style.display = 'block';
-        shortText.style.display = 'none';
-        link.textContent = 'Show less';
-      } else {
-        fullText.style.display = 'none';
-        shortText.style.display = 'block';
-        link.textContent = 'Read more';
-      }
-    }
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -60,6 +44,7 @@
       font-weight: bold;
       border: 2px solid #ffffff;
       transition: background-color 0.2s ease;
+      cursor: pointer;
     }
     .cta:hover {
       background-color: #e6e6e6;
@@ -89,7 +74,6 @@
       border-left: 4px solid #1F3A5F;
       padding: 20px;
       margin: 20px 0;
-      position: relative;
     }
     .testimonial p {
       margin: 0 0 10px;
@@ -97,18 +81,39 @@
     .testimonial span {
       font-weight: bold;
     }
-    .read-more-link {
-      color: #1F3A5F;
+    .accordion {
+      background-color: #1F3A5F;
+      color: white;
       cursor: pointer;
-      font-weight: bold;
-      text-decoration: underline;
-      user-select: none;
+      padding: 12px 20px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: background-color 0.2s ease;
+      border-radius: 4px;
+      margin: 10px 0 0 0;
+    }
+    .accordion:hover,
+    .accordion.active {
+      background-color: #16304b;
+    }
+    .panel {
+      padding: 0 20px 20px 20px;
+      background-color: #f9f9f9;
+      display: none;
+      border-left: 4px solid #1F3A5F;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
     }
     footer {
       background-color: #ffffff;
       padding: 30px 20px;
       text-align: center;
       font-size: 14px;
+      color: #555;
+      border-top: 1px solid #ddd;
     }
     .contact-links {
       margin-top: 10px;
@@ -117,11 +122,17 @@
       margin: 0 10px;
       text-decoration: none;
       color: #1F3A5F;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    .contact-links a:hover {
+      color: #16304b;
     }
     .linkedin-icon {
       width: 20px;
       vertical-align: middle;
       margin-right: 5px;
+      filter: invert(28%) sepia(99%) saturate(423%) hue-rotate(185deg) brightness(92%) contrast(92%);
     }
     .bottom-cta {
       text-align: center;
@@ -159,26 +170,38 @@
   <section class="section">
     <h2>What Clients Say</h2>
 
+    <!-- Short testimonials with accordion buttons -->
     <div class="testimonial">
-      <p class="short-text">Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome... <span class="read-more-link" onclick="toggleText(this)">Read more</span></p>
-      <p class="full-text" style="display:none;">Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome, constantly doubting my abilities and place in a male-dominated field. Through his patient mentorship, honest feedback, and unwavering belief in my potential, he helped me overcome those self-doubts and grow into a confident, capable engineer. His leadership didn’t just sharpen my technical skills—it reshaped how I saw myself. I went from second-guessing everything to owning my ideas and leading with conviction. Anyone lucky enough to work with him is in for something truly transformative.<br><span>- Ling</span></p>
+      <p>Working with Sam Fahlberg completely changed the trajectory of my career. Anyone lucky enough to work with him is in for something truly transformative.</p>
+      <button class="accordion">Ling</button>
+      <div class="panel">
+        Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome, constantly doubting my abilities and place in a male-dominated field. Through his patient mentorship, honest feedback, and unwavering belief in my potential, he helped me overcome those self-doubts and grow into a confident, capable engineer. His leadership didn’t just sharpen my technical skills—it reshaped how I saw myself. I went from second-guessing everything to owning my ideas and leading with conviction. Anyone lucky enough to work with him is in for something truly transformative.
+      </div>
     </div>
 
     <div class="testimonial">
-      <p class="short-text">Sam is the most thoughtful mentor I've had in my 20 years as a software developer... <span class="read-more-link" onclick="toggleText(this)">Read more</span></p>
-      <p class="full-text" style="display:none;">Sam is the most thoughtful mentor I've had in my 20 years as a software developer. He asks great, deep questions, and helped me find and improve areas of weakness. He did the same for our entire team.<br><span>- Andrew</span></p>
+      <p>Sam is the most thoughtful mentor I've had in my 20 years as a software developer.</p>
+      <button class="accordion">Andrew</button>
+      <div class="panel">
+        Sam is the most thoughtful mentor I've had in my 20 years as a software developer. He asks great, deep questions, and helped me find and improve areas of weakness. He did the same for our entire team.
+      </div>
     </div>
 
     <div class="testimonial">
-      <p class="short-text">Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving... <span class="read-more-link" onclick="toggleText(this)">Read more</span></p>
-      <p class="full-text" style="display:none;">Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving, without making me feel embarrassed about it.<br><span>- Nathan</span></p>
+      <p>Sam was super approachable and helped me see where my own mental limitations prevented me from thriving.</p>
+      <button class="accordion">Nathan</button>
+      <div class="panel">
+        Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving, without making me feel embarrassed about it.
+      </div>
     </div>
 
     <div class="testimonial">
-      <p class="short-text">When I was transitioning into software development, Sam was exactly the mentor I needed... <span class="read-more-link" onclick="toggleText(this)">Read more</span></p>
-      <p class="full-text" style="display:none;">When I was transitioning into software development, Sam was exactly the mentor I needed. He didn’t just help me level up technically—he encouraged me during moments of doubt and helped me see the bigger picture in my career. His support gave me the confidence to pursue engineering seriously, and I still carry lessons from our conversations to this day. I’m truly grateful for his guidance.<br><span>- Yulduz</span></p>
+      <p>Sam was exactly the mentor I needed during my transition into software development.</p>
+      <button class="accordion">Yulduz</button>
+      <div class="panel">
+        When I was transitioning into software development, Sam was exactly the mentor I needed. He didn’t just help me level up technically—he encouraged me during moments of doubt and helped me see the bigger picture in my career. His support gave me the confidence to pursue engineering seriously, and I still carry lessons from our conversations to this day. I’m truly grateful for his guidance.
+      </div>
     </div>
-
   </section>
 
   <div class="bottom-cta">
@@ -188,10 +211,33 @@
     </a>
   </div>
 
-<footer>
-  <div>Let's connect</div>
-  <div class="contact-links">
-    <a href="mailto:sam@trysamfahlberg.com">sam@trysamfahlberg.com</a>
-    |
-    <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-icon"/> LinkedIn
+  <footer>
+    <div>Let's connect</div>
+    <div class="contact-links">
+      <a href="mailto:sam@trysamfahlberg.com">sam@trysamfahlberg.com</a> |
+      <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-icon"/> LinkedIn
+      </a> |
+      <a href="privacy.html" style="font-size: 12px; color: #888; text-decoration: none;">Privacy Policy</a>
+    </div>
+    <div style="margin-top: 10px; color: #888;">© 2025 Sam Fahlberg. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(acc => {
+      acc.addEventListener("click", () => {
+        acc.classList.toggle("active");
+        const panel = acc.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
