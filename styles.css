@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background-color: #1F3A5F;
   padding: 40px 20px;
@@ -33,13 +35,15 @@ header p {
   text-decoration: none;
   font-weight: bold;
   border: 2px solid #ffffff;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .cta:hover {
   background-color: #e6e6e6;
+  color: #1F3A5F;
 }
 
+/* Sections */
 .section {
   max-width: 800px;
   margin: 40px auto;
@@ -64,66 +68,46 @@ header p {
   margin-bottom: 20px;
 }
 
-/* Left-align only 'Why Work With Me' text */
 .profile p {
   text-align: left;
 }
 
+/* Testimonials */
 .testimonial {
   background-color: #ffffff;
   border-left: 4px solid #1F3A5F;
   padding: 20px;
   margin: 20px 0;
-  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.testimonial p {
-  margin: 0 0 10px;
+.testimonial .quote {
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
-.testimonial span {
+.testimonial .name {
   font-weight: bold;
-  display: block;
-  margin-top: 8px;
+  color: #1F3A5F;
 }
 
-.read-more-link {
+/* Read Full Link */
+.read-full {
   display: inline-block;
   margin-top: 10px;
-  font-size: 14px;
-  color: #1F3A5F;
-  text-decoration: none;
   font-weight: bold;
-  transition: opacity 0.2s ease;
-}
-
-.read-more-link:hover {
-  opacity: 0.7;
-}
-
-footer {
-  background-color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.contact-links {
-  margin-top: 10px;
-}
-
-.contact-links a {
-  margin: 0 10px;
-  text-decoration: none;
   color: #1F3A5F;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease;
 }
 
-.linkedin-icon {
-  width: 20px;
-  vertical-align: middle;
-  margin-right: 5px;
+.read-full:hover {
+  border-bottom: 2px solid #1F3A5F;
 }
 
+/* Bottom CTA */
 .bottom-cta {
   text-align: center;
   margin: 40px 0;
@@ -137,20 +121,21 @@ footer {
 
 .bottom-cta .cta:hover {
   background-color: #16304b;
+  color: #ffffff;
 }
 
-a.read-full {
-  display: inline-block;
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  color: #1F3A5F;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s ease;
+/* Footer */
+footer {
+  background-color: #1F3A5F;
+  padding: 30px 20px;
   text-align: center;
+  font-size: 14px;
+  color: white;
 }
 
-a.read-full:hover {
-  border-bottom: 2px solid #1F3A5F;
+.contact-links {
+  margin-top: 10px;
 }
+
+.contact-links a {
+  margin: 
