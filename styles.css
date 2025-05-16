@@ -1,0 +1,137 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #1F3A5F;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+header p {
+  font-size: 18px;
+  margin: 0;
+}
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #1F3A5F;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  transition: background-color 0.2s ease;
+}
+.cta:hover {
+  background-color: #e6e6e6;
+}
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profile {
+  text-align: center;
+}
+.profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.accordion-button {
+  background-color: #1F3A5F;
+  color: white;
+  cursor: pointer;
+  padding: 14px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 8px 0;
+  transition: background-color 0.3s ease;
+}
+.accordion-button:hover,
+.accordion-button.active {
+  background-color: #16304b;
+}
+.accordion-panel {
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 2px 5px rgba(31, 58, 95, 0.1);
+}
+.accordion-panel p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+.bottom-cta {
+  text-align: center;
+  margin: 40px 0;
+}
+.bottom-cta .cta {
+  background-color: #1F3A5F;
+  color: #ffffff;
+  border: 2px solid #1F3A5F;
+}
+.bottom-cta .cta:hover {
+  background-color: #16304b;
+}
+footer {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+.contact-links {
+  margin-top: 10px;
+}
+.contact-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #1F3A5F;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
+.linkedin-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.privacy-link {
+  font-size: 12px;
+  color: #888;
+}
+.footer-copy {
+  margin-top: 10px;
+  color: #888;
+  font-size: 12px;
+}
