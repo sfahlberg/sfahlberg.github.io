@@ -13,11 +13,12 @@
       color: #333;
     }
 
-    header, footer {
+    header {
       background-color: #1F3A5F;
       color: white;
-      text-align: center;
       padding: 40px 20px;
+      text-align: center;
+      border-bottom: 6px solid #e6e6e6;
     }
 
     header h1 {
@@ -25,7 +26,7 @@
       margin: 0;
     }
 
-    .container {
+    .section {
       max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
@@ -34,25 +35,28 @@
     .testimonial {
       background-color: #ffffff;
       border-left: 4px solid #1F3A5F;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
       padding: 20px;
-      margin-bottom: 30px;
+      margin: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
     }
 
     .testimonial p {
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
     .testimonial span {
       font-weight: bold;
     }
 
+    .bottom-cta {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+
     .cta {
       display: inline-block;
-      margin: 40px auto;
       background-color: #1F3A5F;
-      color: white;
+      color: #ffffff;
       padding: 12px 24px;
       border-radius: 8px;
       text-decoration: none;
@@ -65,27 +69,35 @@
       background-color: #16304b;
     }
 
-    .back-link-wrapper {
+    footer {
+      background-color: #1F3A5F;
+      color: white;
       text-align: center;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin: 40px auto 0;
-      font-weight: bold;
-      color: #1F3A5F;
-      text-decoration: none;
-      border-bottom: 2px solid transparent;
-      transition: border-bottom 0.2s ease;
-    }
-
-    .back-link:hover {
-      border-bottom: 2px solid #1F3A5F;
-    }
-
-    footer p {
+      padding: 30px 20px;
       font-size: 14px;
-      margin: 0;
+      border-top: 6px solid #e6e6e6;
+    }
+
+    .contact-links {
+      margin-top: 10px;
+    }
+
+    .contact-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .linkedin-icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    footer a.privacy {
+      font-size: 12px;
+      color: #ccc;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -95,42 +107,46 @@
     <h1>What Clients Say</h1>
   </header>
 
-  <div class="container">
-
+  <section class="section">
     <div class="testimonial">
       <p>Working with Sam Fahlberg completely changed the trajectory of my career. As a woman in engineering, I struggled with imposter syndrome, constantly doubting my abilities and place in a male-dominated field. Through his patient mentorship, honest feedback, and unwavering belief in my potential, he helped me overcome those self-doubts and grow into a confident, capable engineer. His leadership didn’t just sharpen my technical skills—it reshaped how I saw myself. I went from second-guessing everything to owning my ideas and leading with conviction. Anyone lucky enough to work with him is in for something truly transformative.</p>
-      <span>- Ling</span>
+      <span>– Ling</span>
     </div>
 
     <div class="testimonial">
       <p>Sam is the most thoughtful mentor I've had in my 20 years as a software developer. He asks great, deep questions, and helped me find and improve areas of weakness. He did the same for our entire team.</p>
-      <span>- Andrew</span>
+      <span>– Andrew</span>
     </div>
 
     <div class="testimonial">
       <p>Sam was super approachable. I appreciate that he put me in a place that showed where my own mental limitations prevented me from thriving, without making me feel embarrassed about it.</p>
-      <span>- Nathan</span>
+      <span>– Nathan</span>
     </div>
 
     <div class="testimonial">
       <p>When I was transitioning into software development, Sam was exactly the mentor I needed. He didn’t just help me level up technically—he encouraged me during moments of doubt and helped me see the bigger picture in my career. His support gave me the confidence to pursue engineering seriously, and I still carry lessons from our conversations to this day. I’m truly grateful for his guidance.</p>
-      <span>- Yulduz</span>
+      <span>– Yulduz</span>
     </div>
+  </section>
 
-    <div style="text-align: center;">
-      <a class="cta" href="https://calendly.com/sam-fahlberg/15min">
-        Book a Free Strategy Call
-      </a>
-    </div>
-
-    <div class="back-link-wrapper">
-      <a href="index.html" class="back-link">← Back to Home</a>
-    </div>
-
+  <div class="bottom-cta">
+    <a class="cta" href="https://calendly.com/sam-fahlberg/15min">
+      Book a Free Strategy Call
+    </a>
   </div>
 
   <footer>
-    <p>© 2025 Sam Fahlberg. All rights reserved.</p>
+    <div>Let's connect</div>
+    <div class="contact-links">
+      <a href="mailto:sam@trysamfahlberg.com">sam@trysamfahlberg.com</a>
+      |
+      <a href="https://www.linkedin.com/in/samuel-fahlberg/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-icon"/> LinkedIn
+      </a>
+      |
+      <a href="privacy.html" class="privacy">Privacy Policy</a>
+    </div>
+    <div style="margin-top: 10px; color: #ccc;">© 2025 Sam Fahlberg. All rights reserved.</div>
   </footer>
 
 </body>
