@@ -1,62 +1,156 @@
-/* Make bottom CTA navy with white text like top button */
-.bottom-cta .cta {
-  background-color: #1f3a5f;
-  color: #ffffff;
-  border: 2px solid #1f3a5f;
+/* --- Body and general layout --- */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
+/* --- Header --- */
+header {
+  background-color: #1F3A5F;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* --- CTA buttons --- */
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #1F3A5F;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  transition: background-color 0.2s ease;
+}
+.cta:hover {
+  background-color: #e6e6e6;
+}
+
+/* --- Bottom CTA overrides for navy button --- */
+.bottom-cta .cta {
+  background-color: #1F3A5F;
+  color: #ffffff;
+  border: 2px solid #1F3A5F;
+}
 .bottom-cta .cta:hover {
   background-color: #16304b;
 }
 
-/* Testimonials style like full page: boxed with navy left border and italic quotes */
+/* --- Sections --- */
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* --- Profile section --- */
+.profile {
+  text-align: center;
+}
+.profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* --- Testimonials (Original Style) --- */
 .testimonial {
   background-color: #ffffff;
-  border-left: 4px solid #1f3a5f;
+  border-left: 4px solid #1F3A5F;
   padding: 20px;
   margin: 20px 0;
-  font-style: italic;
-  position: relative;
-  box-shadow: 0 2px 6px rgba(31, 58, 95, 0.1);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
   border-radius: 6px;
 }
-
 .testimonial p {
-  margin: 0;
-  font-weight: 600;
+  margin: 0 0 10px 0;
+  font-weight: normal;
   font-size: 16px;
-  color: #222;
+  color: #333;
 }
-
-.testimonial .author {
+.testimonial-author {
   font-weight: bold;
-  font-style: normal;
-  margin-top: 8px;
+  color: #1F3A5F;
   display: block;
-  color: #1f3a5f;
   text-align: right;
 }
 
-/* Read Full Testimonials link style */
+/* --- Read full testimonials link --- */
 .read-more-wrapper {
   text-align: center;
   margin-top: 30px;
 }
-
-.read-more-btn {
-  font-weight: 700;
+.read-more-link {
+  font-weight: 600;
   font-size: 16px;
-  color: #1f3a5f;
+  color: #4a5a72;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1.5px solid transparent;
   padding-bottom: 2px;
-  transition: border-color 0.25s ease, color 0.25s ease;
+  transition: border-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
-
-.read-more-btn:hover,
-.read-more-btn:focus {
-  color: #16304b;
-  border-color: #16304b;
+.read-more-link:hover,
+.read-more-link:focus {
+  color: #1F3A5F;
+  border-color: #1F3A5F;
   outline: none;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.contact-links {
+  margin-top: 10px;
+}
+.contact-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #1F3A5F;
+}
+.linkedin-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.privacy-link {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
+}
+.privacy-link:hover,
+.privacy-link:focus {
+  text-decoration: underline;
+}
+
+/* --- Copyright --- */
+copyright {
+  margin-top: 10px;
+  color: #888;
 }
