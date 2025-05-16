@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -5,20 +7,24 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+
 header {
   background-color: #1F3A5F;
   padding: 40px 20px;
   text-align: center;
   color: white;
 }
+
 header h1 {
   font-size: 28px;
   margin: 0 0 10px;
 }
+
 header p {
   font-size: 18px;
   margin: 0;
 }
+
 .cta {
   display: inline-block;
   margin-top: 20px;
@@ -31,22 +37,27 @@ header p {
   border: 2px solid #ffffff;
   transition: background-color 0.2s ease;
 }
+
 .cta:hover {
   background-color: #e6e6e6;
 }
+
 .section {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
 }
+
 .section h2 {
   font-size: 24px;
   margin-bottom: 10px;
   text-align: center;
 }
+
 .profile {
   text-align: center;
 }
+
 .profile img {
   width: 160px;
   height: 160px;
@@ -54,106 +65,75 @@ header p {
   object-fit: cover;
   margin-bottom: 20px;
 }
-.accordion {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.accordion-button {
-  background-color: #1F3A5F;
-  color: white;
-  cursor: pointer;
-  padding: 14px 20px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 6px;
-  margin: 8px 0;
-  transition: background-color 0.3s ease;
-}
-.accordion-button:hover,
-.accordion-button.active {
-  background-color: #16304b;
-}
-.accordion-panel {
+
+/* ORIGINAL testimonial style restored */
+.testimonial {
   background-color: #ffffff;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 20px;
-  border-radius: 0 0 6px 6px;
-  box-shadow: 0 2px 5px rgba(31, 58, 95, 0.1);
+  border-left: 4px solid #1F3A5F;
+  padding: 20px;
+  margin: 20px 0;
 }
-.accordion-panel p {
-  margin: 15px 0;
-  font-size: 16px;
-  color: #333;
+
+.testimonial p {
+  margin: 0 0 10px;
 }
-.bottom-cta {
-  text-align: center;
-  margin: 40px 0;
+
+.testimonial p:first-child {
+  font-weight: bold;
+  font-style: italic;
 }
-.bottom-cta .cta {
-  background-color: #1F3A5F;
-  color: #ffffff;
-  border: 2px solid #1F3A5F;
+
+.testimonial .full-text {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #444;
 }
-.bottom-cta .cta:hover {
-  background-color: #16304b;
+
+.toggle-link {
+  display: inline-block;
+  color: #1F3A5F;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 8px;
 }
+
 footer {
   background-color: #ffffff;
   padding: 30px 20px;
   text-align: center;
   font-size: 14px;
+  color: #555;
   border-top: 1px solid #ddd;
 }
+
 .contact-links {
   margin-top: 10px;
 }
+
 .contact-links a {
   margin: 0 10px;
   text-decoration: none;
   color: #1F3A5F;
 }
-.contact-links a:hover {
-  text-decoration: underline;
-}
+
 .linkedin-icon {
   width: 20px;
   vertical-align: middle;
   margin-right: 5px;
 }
-.privacy-link {
-  font-size: 12px;
-  color: #888;
-}
-.footer-copy {
-  margin-top: 10px;
-  color: #888;
-  font-size: 12px;
+
+.bottom-cta {
+  text-align: center;
+  margin: 40px 0;
 }
 
-.accordion-button {
-  position: relative;
-  padding-right: 40px; /* room for icon on right */
-  white-space: normal;
-  line-height: 1.3;
+.bottom-cta .cta {
+  background-color: #1F3A5F;
+  color: #ffffff;
+  border: 2px solid #1F3A5F;
 }
 
-.accordion-icon {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-  font-size: 24px;
-  transition: transform 0.3s ease;
-  user-select: none;
-}
-
-.accordion-button.active .accordion-icon {
-  transform: translateY(-50%) rotate(45deg); /* turns + into x */
+.bottom-cta .cta:hover {
+  background-color: #16304b;
 }
