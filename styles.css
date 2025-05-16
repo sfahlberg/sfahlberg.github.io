@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #1F3A5F;
+  background-color: #1f3a5f;
   padding: 40px 20px;
   text-align: center;
   color: white;
@@ -27,7 +27,7 @@ header p {
   display: inline-block;
   margin-top: 20px;
   background-color: #ffffff;
-  color: #1F3A5F;
+  color: #1f3a5f;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -48,9 +48,8 @@ header p {
 
 .section h2 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
-  font-weight: 600;
 }
 
 .profile {
@@ -65,108 +64,111 @@ header p {
   margin-bottom: 20px;
 }
 
-.testimonials .testimonial {
-  background-color: #fff;
-  border-left: 4px solid #1F3A5F;
-  padding: 20px 24px;
-  margin-bottom: 24px;
+.testimonial {
+  background-color: #ffffff;
+  border-left: 4px solid #1f3a5f;
+  padding: 20px;
+  margin: 20px 0;
+  font-style: italic;
   position: relative;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  max-height: 100px;
-  cursor: default;
 }
 
-.testimonials .testimonial.expanded {
-  max-height: 1000px; /* large enough to show full text */
-  cursor: auto;
-}
-
-.testimonials .testimonial p {
-  margin: 0 0 12px 0;
-  line-height: 1.5;
-}
-
-.testimonials .testimonial .preview {
+.testimonial p {
+  margin: 0;
   font-weight: 600;
+  font-size: 16px;
+  color: #222;
 }
 
-.testimonials .testimonial .full-text {
-  display: none;
-  margin-top: 0;
-  color: #555;
-}
-
-.testimonials .testimonial.expanded .full-text {
-  display: block;
-  margin-top: 10px;
-}
-
-.toggle-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  color: #1F3A5F;
-  user-select: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.toggle-btn:hover {
-  background-color: rgba(31, 58, 95, 0.1);
-}
-
-.author {
-  display: block;
+.testimonial .author {
   font-weight: bold;
-  text-align: right;
-  color: #1F3A5F;
-  font-size: 14px;
+  font-style: normal;
   margin-top: 8px;
+  display: block;
+  color: #1f3a5f;
+  text-align: right;
+}
+
+.read-more-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  border: none;
+  color: #1f3a5f;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.read-more-btn:hover {
+  color: #16304b;
 }
 
 .bottom-cta {
   text-align: center;
-  margin: 40px 0 60px;
+  margin: 40px 0;
+}
+
+.bottom-cta .cta {
+  background-color: #1f3a5f;
+  color: #ffffff;
+  border: 2px solid #1f3a5f;
+}
+
+.bottom-cta .cta:hover {
+  background-color: #16304b;
 }
 
 footer {
-  background-color: #1F3A5F;
-  color: white;
+  background-color: #ffffff;
+  padding: 30px 20px;
   text-align: center;
-  padding: 20px 15px;
   font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
 }
 
-footer .contact-links {
-  margin: 10px 0;
+.contact-links {
+  margin-top: 10px;
 }
 
-footer a {
-  color: #a9c9ff;
+.contact-links a {
+  margin: 0 10px;
   text-decoration: none;
-  margin: 0 6px;
-  font-weight: 500;
+  color: #1f3a5f;
+  font-weight: 600;
 }
 
-footer a:hover {
+.contact-links a:hover {
   text-decoration: underline;
 }
 
 .linkedin-icon {
-  width: 16px;
-  height: 16px;
+  width: 20px;
   vertical-align: middle;
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
 .privacy-link {
-  font-style: italic;
-  font-size: 13px;
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .testimonial p {
+    font-size: 14px;
+  }
+  .testimonial .author {
+    font-size: 14px;
+  }
 }
