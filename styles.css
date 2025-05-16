@@ -138,4 +138,44 @@ footer {
 }
 
 .contact-links a {
-  margin: 
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.linkedin-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  filter: brightness(0) invert(1);
+}
+
+footer a.privacy-link {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a.privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .cta {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
